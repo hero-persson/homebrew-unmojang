@@ -5,6 +5,6 @@
 ## To install Fjord Launcher
 
 ```
-brew tap unmojang/homebrew-unmojang
+brew tap hero-persson/homebrew-unmojang
 brew install --cask fjordlauncher
 ```
