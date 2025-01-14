@@ -1,13 +1,13 @@
 cask "fjordlauncher" do
-  version "9.1.0"
+  version "9.2.1"
 
   on_mojave :or_older do
-    sha256 "de64536213848a5e6dbf5e044c29ebfff8f2407ce1a0378e60342ddf0c900bb1"
+    sha256 "0214745c9d0b29564895fa9f7c01351e963db125466867cbbd5801a28be729d3"
 
     url "https://github.com/hero-persson/FjordLauncherUnlocked/releases/download/#{version}/FjordLauncher-macOS-Legacy-#{version}.zip"
   end
   on_catalina :or_newer do
-    sha256 "82615b3400bd1097b3963d88e02ef7514f8b8b7f2394ed8db02f0f824e75842f"
+    sha256 "0732a3304174a96ffbc5fe593942b9b53335ae6630df7f4312dfd48140ec173c"
 
     url "https://github.com/hero-persson/FjordLauncherUnlocked/releases/download/#{version}/FjordLauncher-macOS-#{version}.zip"
   end
