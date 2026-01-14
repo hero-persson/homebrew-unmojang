@@ -1,13 +1,19 @@
 cask "fjordlauncher" do
-  version "9.4.0"
-
-  on_mojave :or_older do
-    sha256 "32b8465a16adad3d8f6292fa496c5e6c989726834b13bddcfefa128c8c971785"
+  on_catalina :or_older do
+    version "9.4.1"
+    sha256 "21cebabaf127f022f793d04c0ed4d10f1e7acfa661e669cbbbe9af81d648e310"
 
     url "https://github.com/hero-persson/FjordLauncherUnlocked/releases/download/#{version}/FjordLauncher-macOS-Legacy-#{version}.zip"
   end
-  on_catalina :or_newer do
-    sha256 "8eb5dacaea854b43781617483ec8bbe2d4f462a01f7ac48000f7746e6df76f8c"
+  on_big_sur do
+    version "9.4.1"
+    sha256 "56e2b0efeaf97c34f2f61281483b88e3323757a2ea3ef7a9f51be0a1de8d30eb"
+
+    url "https://github.com/hero-persson/FjordLauncherUnlocked/releases/download/#{version}/FjordLauncher-macOS-#{version}.zip"
+  end
+  on_monterey :or_newer do
+    version "10.0.2.0"
+    sha256 "56e2b0efeaf97c34f2f61281483b88e3323757a2ea3ef7a9f51be0a1de8d30eb"
 
     url "https://github.com/hero-persson/FjordLauncherUnlocked/releases/download/#{version}/FjordLauncher-macOS-#{version}.zip"
   end
@@ -16,10 +22,10 @@ cask "fjordlauncher" do
   desc "Prism Launcher fork with support for alternative auth servers"
   homepage "https://github.com/unmojang/FjordLauncher"
 
-  auto_updates true
-  depends_on macos: ">= :high_sierra"
+  auto_updates false
 
   app "Fjord Launcher.app"
+  binary "#{appdir}/Fjord Launcher.app/Contents/MacOS/fjordlauncher"
 
   zap trash: [
     "~/Library/Application Support/FjordLauncher/FjordLauncher-*.log",
