@@ -12,8 +12,8 @@ cask "fjordlauncher" do
     url "https://github.com/hero-persson/FjordLauncherUnlocked/releases/download/#{version}/FjordLauncher-macOS-#{version}.zip"
   end
   on_monterey :or_newer do
-    version "11.0.0.0"
-    sha256 "f2c562f21589cd6ea028b081b7892cf3585064db413256a67b653d7cd9dcd230"
+    version "11.0.2.0"
+    sha256 "3d4f84b2853cc46f885a9c46a98650b75f6ce7cc1f4e273cf1f77090279b12ed"
 
     url "https://github.com/hero-persson/FjordLauncherUnlocked/releases/download/#{version}/FjordLauncher-macOS-#{version}.zip"
   end
